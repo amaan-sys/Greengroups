@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutimg from "../assets/hero1.jpg"; // Use your own image
-import before from "../assets/hero1.jpg"; // replace with before img
-import after from "../assets/hero1.jpg"; // replace with after img
+import before from "../assets/commercial4.jpg"; // replace with before img
+import after from "../assets/commercial4.jpg"; // replace with after img
 
 export default function AboutUs() {
   return (

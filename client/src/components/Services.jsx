@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import solutionImg from "../assets/hero1.jpg";
-import installationImg from "../assets/hero1.jpg";
-import supportImg from "../assets/hero1.jpg";
+import solutionImg from "../assets/golfcar.jpg";
+import installationImg from "../assets/installation.jpg";
+import supportImg from "../assets/support.png";
+
 
 export default function Services() {
   const services = [

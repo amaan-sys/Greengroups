@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import bg from "../assets/hero1.jpg";
 
+
 export default function Hero() {
   return (
     <section
@@ -33,7 +34,7 @@ export default function Hero() {
       />
 
       {/* Floating leaf particles */}
-      {[...Array(10)].map((_, i) => (
+      {/* {[...Array(10)].map((_, i) => (
         <motion.div
           key={i}
           animate={{
@@ -54,7 +55,7 @@ export default function Hero() {
         >
           🍃
         </motion.div>
-      ))}
+      ))} */}
 
       {/* Main Content */}
       <motion.div

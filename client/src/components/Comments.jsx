@@ -5,13 +5,13 @@ import { Star } from "lucide-react";
 export default function Comments() {
   const comments = [
     {
-      name: "Rahul Singh",
+      name: "Paul Michel",
       text: "GreenGroups completely transformed my garden! Professional, friendly and reliable team. My outdoor space looks stunning now.",
       avatar: "https://i.pravatar.cc/100?img=1",
       rating: 5,
     },
     {
-      name: "Aditi Verma",
+      name: "Emma Watson",
       text: "Amazing service and quick work! They made the entire garden feel fresh, modern, and beautifully organized.",
       avatar: "https://i.pravatar.cc/100?img=5",
       rating: 5,
