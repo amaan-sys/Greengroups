@@ -1,8 +1,14 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import logo from "../assets/logo.png"
+import { NavLink } from "react-router-dom";
+
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-green-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -24,10 +30,23 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><a href="/" className="hover:text-green-300">Home</a></li>
-            <li><a href="#services" className="hover:text-green-300">Our Services</a></li>
-            <li><a href="#about" className="hover:text-green-300">About Us</a></li>
-            <li><a href="#contact" className="hover:text-green-300">Contact</a></li>
+
+            <li>  <NavLink to="/" onClick={scrollToTop}
+              className="hover:text-green-300">
+              Home
+            </NavLink></li>
+            <li>  <NavLink to="/whyus" onClick={scrollToTop}
+              className="hover:text-green-300">
+              Why Us
+            </NavLink></li>
+            <li>  <NavLink to="/about" onClick={scrollToTop}
+              className="hover:text-green-300">
+              About Us
+            </NavLink></li>
+            <li>  <NavLink to="/contact" onClick={scrollToTop}
+              className="hover:text-green-300">
+              Contact
+            </NavLink></li>
           </ul>
         </div>
 

@@ -15,10 +15,14 @@ export default function Navbar() {
 
         {/* Logo Section */}
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Logo" className="h-12" />
-          <span className="text-2xl font-bold text-green-700">
-            GreensGroup
-          </span>
+          <NavLink to="/" onClick={scrollToTop}
+            className="flex items-center gap-3">
+
+            <img src={logo} alt="Logo" className="h-12 cursor-pointer" />
+            <span className="text-2xl font-bold text-green-700 cursor-pointer">
+              GreensGroup
+            </span>
+          </NavLink>
         </div>
 
         {/* Desktop Navigation */}
@@ -27,10 +31,9 @@ export default function Navbar() {
             to="/"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -41,10 +44,9 @@ export default function Navbar() {
             to="/about"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -55,10 +57,9 @@ export default function Navbar() {
             to="/WhyUs"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -69,10 +70,9 @@ export default function Navbar() {
             to="/CaseStudies"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -83,10 +83,9 @@ export default function Navbar() {
             to="/Blog"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -97,10 +96,9 @@ export default function Navbar() {
             to="/contact"
             onClick={scrollToTop}
             className={({ isActive }) =>
-              `pb-1 border-b-4 ${
-                isActive
-                  ? "border-green-600 text-green-700"
-                  : "border-transparent"
+              `pb-1 border-b-4 ${isActive
+                ? "border-green-600 text-green-700"
+                : "border-transparent"
               } hover:text-green-700`
             }
           >
@@ -114,28 +112,24 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
         >
           <span
-            className={`h-1 w-7 bg-green-700 transition-all ${
-              open ? "rotate-45 translate-y-2" : ""
-            }`}
+            className={`h-1 w-7 bg-green-700 transition-all ${open ? "rotate-45 translate-y-2" : ""
+              }`}
           ></span>
           <span
-            className={`h-1 w-7 bg-green-700 transition-all ${
-              open ? "opacity-0" : ""
-            }`}
+            className={`h-1 w-7 bg-green-700 transition-all ${open ? "opacity-0" : ""
+              }`}
           ></span>
           <span
-            className={`h-1 w-7 bg-green-700 transition-all ${
-              open ? "-rotate-45 -translate-y-2" : ""
-            }`}
+            className={`h-1 w-7 bg-green-700 transition-all ${open ? "-rotate-45 -translate-y-2" : ""
+              }`}
           ></span>
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden bg-white shadow-inner transition-all duration-300 overflow-hidden ${
-          open ? "max-h-96 py-4" : "max-h-0"
-        }`}
+        className={`md:hidden bg-white shadow-inner transition-all duration-300 overflow-hidden ${open ? "max-h-96 py-4" : "max-h-0"
+          }`}
       >
         <nav className="flex flex-col items-start gap-4 px-6 text-lg font-semibold">
 

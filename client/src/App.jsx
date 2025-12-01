@@ -7,6 +7,8 @@ import WhyUs from "./Pages/WhyUs"
 import CaseStudies from "./Pages/CaseStudies";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact"
+import Chatbot from "./components/Chatbot";
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+<Chatbot/>
       <Footer />
     </Router>
   );

@@ -183,7 +183,7 @@ export default function BlogPage() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-3 rounded-l-xl w-72 text-black"
+            className="px-4 py-3 rounded-l-xl w-72 text-black border border-2 border-white text-white"
           />
           <button className="bg-white text-green-700 px-6 py-3 rounded-r-xl font-semibold">
             Subscribe
