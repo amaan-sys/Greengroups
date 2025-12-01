@@ -179,16 +179,33 @@ export default function BlogPage() {
           Subscribe to our newsletter and get weekly outdoor inspiration.
         </p>
 
-        <div className="mt-8 flex justify-center">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="px-4 py-3 rounded-l-xl w-72 text-black border border-2 border-white text-white"
-          />
-          <button className="bg-white text-green-700 px-6 py-3 rounded-r-xl font-semibold">
-            Subscribe
-          </button>
-        </div>
+       <div className="mt-8 flex flex-col sm:flex-row justify-center w-full px-4 sm:px-0 gap-3 sm:gap-0">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="
+      px-4 py-3
+      rounded-xl sm:rounded-l-xl sm:rounded-r-none
+      w-full sm:w-72 
+      text-black
+      border border-white
+      focus:outline-none focus:ring-2 focus:ring-green-600
+    "
+  />
+
+  <button
+    className="
+      bg-white text-green-700 
+      px-6 py-3 
+      rounded-xl sm:rounded-r-xl sm:rounded-l-none
+      font-semibold 
+      w-full sm:w-auto 
+    "
+  >
+    Subscribe
+  </button>
+</div>
+
       </section>
 
       {/* CTA Section */}
